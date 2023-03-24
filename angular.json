@@ -22,12 +22,15 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "serviceWorker": true,
+            "ngswConfigPath": "ngsw-config.json"
           },
           "configurations": {
             "production": {
@@ -57,10 +60,16 @@
           "defaultConfiguration": "production"
         },
         "serve": {
+          "options": {
+            "sslCert": "./server.crt",
+            "sslKey": "./server.key",
+            "ssl": true
+          },
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "car-insurance-pwa:build:production"
+              "browserTarget": "car-insurance-pwa:build:production",
+              "ssl": true
             },
             "development": {
               "browserTarget": "car-insurance-pwa:build:development"
@@ -84,7 +93,8 @@
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
               "src/styles.css"
@@ -94,5 +104,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
