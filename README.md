@@ -26,11 +26,19 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
+## Notifications and BD
 
-Install webpush
-'npm install web-push http-server -g'
+### Install webpush
 
-web-push generate-vapid-key --json
+'npm install web-push -g'
 
-Get VAPID KEY
-{"publicKey":"BEyGvGb05J3tOzfxtl6wZ5uCojyoeMtuDD29mDP8cuOkxIjpwmGBK_6XUqSTfaNa7F-Tzz52dA-3ASkiStVRkdE","privateKey":"_Q2-SfSZMhlNxJume2_BhnUxmgy4hVJNMJ6IrPTQiZk"}
+### Server node.js
+
+npm init -y 
+npm i express body-parser cors
+
+
+
+
+
+
