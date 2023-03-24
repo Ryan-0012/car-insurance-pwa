@@ -30,7 +30,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 Install webpush
 'npm install web-push http-server -g'
 
-web-push generate-vapid-key --json
 
-Get VAPID KEY
-{"publicKey":"BEyGvGb05J3tOzfxtl6wZ5uCojyoeMtuDD29mDP8cuOkxIjpwmGBK_6XUqSTfaNa7F-Tzz52dA-3ASkiStVRkdE","privateKey":"_Q2-SfSZMhlNxJume2_BhnUxmgy4hVJNMJ6IrPTQiZk"}
+
